@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Numverse</title>
+</head>
+<body>
+    <h1>Welcome to Numverse!</h1>
+    <p>Enter a number below:</p>
+    <input type="number" id="num" placeholder="Enter number">
+    <button onclick="showResult()">Get Result</button>
+    <p id="output"></p>
+
+    <script>
+        function showResult() {
+            const n = document.getElementById('num').value;
+            document.getElementById('output').innerText = "You entered: " + n;
+        }
+    </script>
+</body>
+</html>
